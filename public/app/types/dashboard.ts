@@ -39,6 +39,7 @@ export interface DashboardMeta {
   hasUnsavedFolderChange?: boolean;
   annotationsPermissions?: AnnotationsPermissions;
   publicDashboardAccessToken?: string;
+  slug?: string;
 }
 
 export interface AnnotationActions {
@@ -53,6 +54,7 @@ export interface AnnotationsPermissions {
 }
 
 export interface DashboardDataDTO {
+  id: number;
   title: string;
   uid: string;
   templating: {
